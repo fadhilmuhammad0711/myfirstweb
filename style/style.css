@@ -13,10 +13,7 @@ html,body{
   width: 100%;
   z-index: 2;
   margin: 0;
-  min-width: 100%;
   box-shadow:1px 1px 25px 1px rgb(0,0,0, 0.5);
-  min-width: 100%;
-
 }
 
 .left-side{
@@ -65,11 +62,12 @@ a{
   cursor: pointer;
 }
 
-.main{
+.main, .main-content, .main-area{
   width: 100%;
   height: 100%;
   margin-bottom: 0;
   box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .first{
@@ -104,50 +102,34 @@ a{
   background-position: center right;
 }
 
-.text{
-  font-size: 120px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  float: right;
-  margin-top: 275px;
-  text-align: right;
-  margin-bottom: 0;
-  color: white;
-  margin-right: 80px;
-  position: absolute;
-  right: 0;
-  z-index: 0;
-}
 
 .first .text{
-  font-size: 120px;
+  font-size: 800%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  float: right;
-  margin-top: 125px;
-  text-align: right;
-  margin-bottom: 0;
   color: white;
-  margin-right: 80px;
-  position: absolute;
-  right: 0;
+  margin: 0;
+  position: relative;
+  float: right;
+  margin-right: 5%;
+  text-align: right;
+  margin-top:7%;
 }
 
 .button{
-  right: 0;
-  margin-top: 587px;
-  width: 280px;
-  height: 75px;
+  width: 18rem;
+  height: 5rem;;
   background: none;
   border-radius: 20px;
   border-color: white;
   border-width: 1px;
-  margin-right: 85px;
-  position: absolute;
   font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
   font-weight: 200;
-  font-size: 28px;
   color: white;
+  position: relative;
+  margin-top: 39%;
+  float: right;
 }
 
 .button:hover{
@@ -165,7 +147,7 @@ a{
 
 .content{
   justify-content: center;
-  padding: 160px;
+  padding: 15%;
   margin: 0;
 }
 
@@ -351,7 +333,7 @@ td{
 
 .your-name:focus{
   outline: none !important;
-  border
+  border: rgb(54, 73, 67);
 }
 
 .button-name{
