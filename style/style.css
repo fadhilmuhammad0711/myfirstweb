@@ -1,7 +1,6 @@
 html,body{
   margin: 0;
   padding: 0;
-  width: 100%;
   height: 100%;
   font-family: 'Quicksand', sans-serif;
   scroll-behavior: smooth;
@@ -14,8 +13,10 @@ html,body{
   width: 100%;
   z-index: 2;
   margin: 0;
-  min-width: 1000px;
+  min-width: 100%;
   box-shadow:1px 1px 25px 1px rgb(0,0,0, 0.5);
+  min-width: 100%;
+
 }
 
 .left-side{
@@ -28,8 +29,8 @@ html,body{
 
 .right-side{
   right: 0;
-  float: right;
   top: 0;
+  float: right;
 }
 
 .menu{
@@ -67,8 +68,6 @@ a{
 .main{
   width: 100%;
   height: 100%;
-  margin: auto;
-  display: table;
   margin-bottom: 0;
   box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.5);
 }
@@ -120,16 +119,6 @@ a{
   z-index: 0;
 }
 
-.main-area{
-  width: 100%;
-  height: 100%;
-}
-
-.main-content{
-  width: 100%;
-  height: 100%;
-}
-
 .first .text{
   font-size: 120px;
   font-family: 'Montserrat', sans-serif;
@@ -175,8 +164,9 @@ a{
 }
 
 .content{
-  padding: 120px 240px;
-  min-width: 1000px;
+  justify-content: center;
+  padding: 160px;
+  margin: 0;
 }
 
 .one{
@@ -200,7 +190,6 @@ a{
   text-align: justify;
   margin-left: 50px;
   font-size: 25px;
-  min-width: 540px;
 }
 
 .teks h1{
@@ -210,10 +199,14 @@ a{
   font-size: 40px;
 }
 
+.limit{
+  width: 80%;
+  height: 2px;
+}
+
 footer{
-  border-top: 1px solid rgb(89, 143, 125, 0.8);
-  margin: 30px 120px;
   text-align: center;
+  min-width: 100%;
 }
 
 .social{
